@@ -1,0 +1,39 @@
+.chat-list {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.chat-list .chat-contact-profile {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  cursor: pointer;
+}
+.chat-list .chat-contact-profile .profile-image {
+  width: 40px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.chat-list .chat-contact-profile .profile-image img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.chat-list .chat-contact-profile .profile-name h2 {
+  font-family: var(--poppins);
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
+}/*# sourceMappingURL=ChatList.css.map */

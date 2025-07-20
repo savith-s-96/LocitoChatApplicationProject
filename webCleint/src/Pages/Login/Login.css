@@ -1,0 +1,171 @@
+.login-page, .otp-verify-page {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 2px var(--logo-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius-1);
+}
+.login-page .login-form, .otp-verify-page .login-form {
+  width: 300px;
+  min-height: 300px;
+  height: auto;
+  box-shadow: 0px 0px 4px var(--logo-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-1);
+  gap: 20px;
+  border-radius: var(--border-radius-1);
+  position: relative;
+}
+.login-page .login-form .loader-box, .otp-verify-page .login-form .loader-box {
+  width: 100%;
+  height: 100%;
+  background: rgb(183, 183, 183);
+  z-index: 50;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.login-page .login-form .logo, .otp-verify-page .login-form .logo {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+.login-page .login-form .logo img, .otp-verify-page .login-form .logo img {
+  width: 30px;
+  aspect-ratio: 1/1;
+}
+.login-page .login-form .logo h2, .otp-verify-page .login-form .logo h2 {
+  font-family: var(--poppins);
+  color: var(--logo-color);
+}
+.login-page .login-form .user-email-and-mobile-number, .otp-verify-page .login-form .user-email-and-mobile-number {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.login-page .login-form .user-email-and-mobile-number input, .otp-verify-page .login-form .user-email-and-mobile-number input {
+  width: 100%;
+  height: 40px;
+  border-radius: var(--border-radius-1);
+  padding: 2px;
+  font-size: 1rem;
+  font-family: var(--Arial);
+  border: none;
+  box-shadow: 0px 0px 4px var(--logo-color);
+  outline: none;
+}
+.login-page .login-form .user-email-and-mobile-number input::-moz-placeholder, .otp-verify-page .login-form .user-email-and-mobile-number input::-moz-placeholder {
+  color: var(--logo-color);
+}
+.login-page .login-form .user-email-and-mobile-number input::placeholder, .otp-verify-page .login-form .user-email-and-mobile-number input::placeholder {
+  color: var(--logo-color);
+}
+.login-page .login-form .error-msg, .otp-verify-page .login-form .error-msg {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.login-page .login-form .error-msg p, .otp-verify-page .login-form .error-msg p {
+  color: var(--logo-color);
+  font-family: var(--poppins);
+}
+.login-page .login-form .login-btn button, .otp-verify-page .login-form .login-btn button {
+  font-size: 1rem;
+  padding: 5px 20px;
+  background: transparent;
+  color: var(--logo-color);
+  box-shadow: 0px 0px 4px var(--logo-color);
+  font-family: var(--poppins);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--border-radius-1);
+}
+.login-page .login-otp-form, .otp-verify-page .login-otp-form {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.login-page .login-otp-form .otp-email-message, .otp-verify-page .login-otp-form .otp-email-message {
+  color: var(--logo-color);
+  font-family: var(--poppins);
+  text-align: center;
+}
+.login-page .login-otp-form .otp-inputs, .otp-verify-page .login-otp-form .otp-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.login-page .login-otp-form .otp-inputs input, .otp-verify-page .login-otp-form .otp-inputs input {
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid var(--logo-color);
+  text-align: center;
+  font-size: 1rem;
+}
+.login-page .login-otp-form .otp-inputs input.invalid, .otp-verify-page .login-otp-form .otp-inputs input.invalid {
+  border-bottom: 2px solid rgb(250, 44, 44);
+}
+.login-page .login-otp-form .submit-btn, .otp-verify-page .login-otp-form .submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 20px;
+}
+.login-page .login-otp-form .submit-btn button, .otp-verify-page .login-otp-form .submit-btn button {
+  border: 2px solid var(--logo-color);
+  border-radius: 2px;
+  font-family: var(--poppins);
+  padding: 5px 20px;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--logo-color);
+  background: transparent;
+}
+.login-page .login-otp-form .msg, .otp-verify-page .login-otp-form .msg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-page .login-otp-form .msg p, .otp-verify-page .login-otp-form .msg p {
+  color: var(--logo-color);
+  font-size: 1rem;
+  font-family: var(--Arial);
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .login-page .login-form {
+    width: 95%;
+  }
+  .otp-verify-page .login-otp-form {
+    width: 100%;
+  }
+  .otp-verify-page .login-otp-form .otp-inputs input {
+    width: 20px;
+    height: 20px;
+  }
+}/*# sourceMappingURL=Login.css.map */

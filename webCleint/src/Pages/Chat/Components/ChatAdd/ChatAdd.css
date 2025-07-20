@@ -1,0 +1,15 @@
+.chat-add-btn {
+  width: 50px;
+  aspect-ratio: 1/1;
+  position: absolute;
+  z-index: 50;
+  bottom: 40px;
+  right: 10px;
+  cursor: pointer;
+}
+.chat-add-btn img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}/*# sourceMappingURL=ChatAdd.css.map */

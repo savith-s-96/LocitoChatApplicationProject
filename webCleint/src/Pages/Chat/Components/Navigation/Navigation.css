@@ -1,0 +1,44 @@
+.locito-nav-bar {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  box-shadow: 0px 1px 5px rgb(199, 199, 199);
+  border-radius: 2px;
+}
+.locito-nav-bar img {
+  width: 50px;
+  aspect-ratio: 1/1;
+}
+.locito-nav-bar .logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.locito-nav-bar .logo img {
+  width: 30px;
+  aspect-ratio: 1/1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.locito-nav-bar .logo h2 {
+  font-family: var(--poppins);
+  color: var(--logo-color);
+  font-size: 1.5rem;
+}
+.locito-nav-bar .menu {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.locito-nav-bar .menu img {
+  width: 30px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=Navigation.css.map */
